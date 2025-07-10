@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Organization</title>
+    <link rel="stylesheet" href="/stylesheets/style2.css">
+</head>
+<body>
+    <div class="heading"><span id="our">COMPANY&nbsp;</span><span>DATABASE</span></div>
+
+    <div class="container">
+        <div class="back">
+            <img src="/images/back arrow.png" alt="">
+            <a href="/">Back to Home</a>
+        </div>
+
+        <div class="all">All Users</div>
+
+        <div class="users">
+            <% if (users.length > 0) { %>
+                <% users.forEach(function(val) { %>
+                    <div class="user">
+                        <div class="image">
+                            <img src="<%= val.image %>" alt="">
+                        </div>
+                        <div><%= val.name %></div>
+                        <div><%= val.email %></div>
+                        <div class="links">
+                            <a href="/edit/<%= val._id %>">Edit user</a>
+                            <a href="/delete/<%= val._id %>">Delete user</a>
+                        </div>
+                    </div>
+                <% }) %>
+            <% } else { %>
+                <h3>No users yet.</h3>
+            <% }%>
+        </div>
+
+    </div>
+</body>
+</html>
