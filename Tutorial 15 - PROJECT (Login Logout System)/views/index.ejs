@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Logout System</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div class="full">
+        <div class="heading">LOGIN - LOGOUT SYSTEM</div>
+
+        <div class="container">
+            <div class="create">Create Your Account</div>
+
+            <div class="form">
+                <form action="/create" method="post">
+                    <input type="text" placeholder="Username" name="username" id="username" required>
+                    <input type="email" placeholder="Email" name="email" id="email" required>
+                    <input type="password" placeholder="Password" name="password" id="password" required>
+                    <input type="number" placeholder="Age" name="age" id="age" required>
+                    <input type="submit" value="Create Account" id="button">
+                </form>
+            </div>
+
+            <div class="login">
+                <span>OR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <button id="login-btn"><a href="/login">Login</a></button>
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+</html>

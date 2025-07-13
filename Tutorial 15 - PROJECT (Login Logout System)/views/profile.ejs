@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Logout System</title>
+    <link rel="stylesheet" href="/stylesheets/style5.css">
+</head>
+<body>
+    <div class="full">
+        <div class="heading">LOGIN - LOGOUT SYSTEM</div>
+
+        <div class="container">
+            <div class="back">
+                <img src="/images/back arrow.png" alt="">
+                <a href="/logout">Log Out</a>
+            </div>
+
+            <div class="profile">Your Profile</div>
+
+            <div class="bottom">
+                <div class="left">
+                    <div class="image">
+                        <img src="https://img.freepik.com/premium-vector/technology-concept-vector-illustration-featuring-blockchain-design-flat-style-elements_1226483-3854.jpg?ga=GA1.1.540240835.1738300642&semt=ais_hybrid" alt="">
+                    </div>
+                    <div><%= username %></div>
+                </div>
+
+                <div class="right">
+                    <div class="fields">
+                        <div>Name</div>
+                        <div>Email</div>
+                        <div>Age</div>
+                        <div>Phone Number</div>
+                        <div>Address</div>
+                        <div>Occupation</div>
+                        <div>Company</div>
+                        <div>Skills</div>
+                        <div>Fav. Languages</div>
+                        <div>Hobby</div>
+                        <div>LinkedIn Profile</div>
+                    </div>
+                    <div class="data">
+                        <div><%= username %></div>
+                        <div><%= email %></div>
+                        <div><%= age %></div>
+                        <div>5604081284</div>
+                        <div>4059 Carling Avenue, Canada</div>
+                        <div>Software Engineer</div>
+                        <div>Google</div>
+                        <div>HTML, CSS, JavaScript, React, Node.JS, Express.JS</div>
+                        <div>Java, Python</div>
+                        <div>Book reading</div>
+                        <div>www.linkedin.com/in/<%= lowerName %></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+</html>
